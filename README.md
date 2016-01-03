@@ -2,25 +2,19 @@
 
 A script to remove the old version of puppet from the Vagrant ubuntu/trusty64 image
 
-When using Vagrant, it can be problematic when using the ubuntu/trusty64 image when trying to install a version 4.X version of Puppet.
+When using Vagrant, it can be problematic when using the ubuntu/trusty64 image when trying to install a version **4.X** version of Puppet.
 
-This is caused by the default ubuntu/trusty64 image already containing an installed version of puppet (3.X)
+This is caused by the default ubuntu/trusty64 image already containing an installed version of puppet (**3.x**)
 
 The scripts folder of this project contain versions of this script that can be inlined into the "provision" stage of a Vagrant box startup to automatically remove older puppet if need be.
 
-Version 1.0.0 of the script simply assumes a complete remove and re-install is requested.
-
 This script can work in combination with the Vagrant Plugin [vagrant-puppet-install](https://github.com/petems/vagrant-puppet-install)
 
-To keep things as simple as possible and with minimal effort required (no builds required), start new versions rather than modifying existing versions.
-
-We're trying this as a simple experiment to simplify script downloading and backward compatibility.
-
-Enhancements to this script are welcome with Pull Requests.
+Version 1.0.0 of the script simply assumes a complete remove and re-install is requested.
 
 --
 
- To use this script in your Vagrantfile, the following code will work...
+ **To use this script in your Vagrantfile** , the following code will work...
 
  ```
  config.vm.define :trusty_ubuntu_box do |trusty_ubuntu_box|
@@ -43,7 +37,16 @@ We suspect there may be other modules or apps that might be able to use this scr
 
 If you find another use for this script, please let us know by opening an issue. Or, do a fork and pull request to modify the README.md
 
+**Contributing**
 
-Authors:
+To keep maintenance overhead low, a new script will simply be created in a new folder until (and if needed) a more suitable packaging strategy can be determined.
+
+We're trying this as a simple experiment to simplify script downloading and backward compatibility.
+
+Enhancements to the next version script are welcome with Pull Requests.
+
+
+**Authors:**
+
 Mike Caspar <mike@caspar.com>
 
