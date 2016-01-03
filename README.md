@@ -19,7 +19,9 @@ Version 1.0.0 of the script simply assumes a complete remove and re-install is r
  ```
  config.vm.define :trusty_ubuntu_box do |trusty_ubuntu_box|
      trusty_ubuntu_box.puppet_install.puppet_version = :latest
-     trusty_ubuntu_box.puppet_install.install_url = "https://raw.githubusercontent.com/MikeCaspar/vagrant-purge-old-pupp$
+
+     trusty_ubuntu_box.puppet_install.install_url = \
+     "https://raw.githubusercontent.com/MikeCaspar/vagrant-purge-old-puppet-from-ubuntu/master/scripts/1.0.0/purge-install.sh"
 
      trusty_ubuntu_box.vm.box = "ubuntu/trusty64"
 
@@ -28,6 +30,11 @@ Version 1.0.0 of the script simply assumes a complete remove and re-install is r
  end
 
  ```
+
+_If you would like to simply and always get the latest, change the url to
+https://raw.githubusercontent.com/MikeCaspar/vagrant-purge-old-puppet-from-ubuntu/master/scripts/latest/purge-install.sh
+ _
+
 ---
 For more information on the vagrant-puppet-install module click [HERE](https://github.com/petems/vagrant-puppet-install)
 
