@@ -2,11 +2,11 @@
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
-#require 'vagrant-purge-old-puppet-from-ubuntu/version'
+# require 'vagrant-purge-old-puppet-from-ubuntu/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "vagrant-purge-old-puppet-from-ubuntu"
-  spec.version       = VagrantPlugins::PuppetInstall::VERSION
+# spec.version       = VagrantPlugins::PuppetInstall::VERSION
   spec.authors       = ["Mike Caspar"]
   spec.email         = ["mike@caspar.com"]
   spec.description   = %q{shell scripts with ruby based tests to validate the scripts to remove an older version of puppet from ubuntu vagrant images.}
