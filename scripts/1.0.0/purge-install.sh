@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+## in case an older version of puppet is installed, remove it
 
 #The MIT License (MIT)
 #
@@ -23,17 +23,14 @@
 #SOFTWARE.
 
 
-
-## in case an older version of puppet is installed, remove it
 apt-get purge puppet -y
 rm /etc/puppet -rf
 apt-get autoremove -y
 
-apt-get install wget
+apt-get install wget 
 wget https://apt.puppetlabs.com/puppetlabs-release-pc1-wheezy.deb
 dpkg -i puppetlabs-release-pc1-wheezy.deb
 apt-get update
 
 # install new puppet agent now...
 apt-get install puppet-agent
-
