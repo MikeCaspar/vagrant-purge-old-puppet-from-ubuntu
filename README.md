@@ -33,6 +33,8 @@ Enhancements to this script are welcome with Pull Requests.
 ---
 For more information on the vagrant-puppet-install module click [HERE](https://github.com/petems/vagrant-puppet-install)
 
+For more information about Vagrant, go to the Vagrant web site at [https://www.vagrantup.com/](https://www.vagrantup.com/)
+
 We suspect there may be other modules or apps that might be able to use this script.
 
 If you find another use for this script, please let us know by opening an issue. Or, do a fork and pull request to modify the README.md
