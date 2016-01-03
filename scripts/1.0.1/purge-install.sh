@@ -23,21 +23,36 @@
 #OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 #SOFTWARE.
 
+function versionCheck {
 
-# best practices seems to suggest these should be set to error properly
-set -o errexit
-set -o pipefail
-set -o nounset
+version=$("puppet" --version >&1 | awk -F '"' '{print $1}')
 
+echo Current Version is "$version"
+
+    if [[ "$version" < "4" ]]; then
 
 apt-get purge puppet -y
 rm /etc/puppet -rf
 apt-get autoremove -y
 
-apt-get install wget 
+
+    else
+
+        echo "Old puppet does not exist so it does not need to be removed"
+
+    fi
+
+## install now
+
+apt-get install wget
 wget https://apt.puppetlabs.com/puppetlabs-release-pc1-wheezy.deb
 dpkg -i puppetlabs-release-pc1-wheezy.deb
 apt-get update
 
 # install new puppet agent now...
 apt-get install puppet-agent
+
+
+}
+
+
