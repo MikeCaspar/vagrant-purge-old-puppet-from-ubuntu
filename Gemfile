@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gemspec
+#gemspec
 
 group :development do
   # We depend on Vagrant for development, but we don't add it as a
@@ -10,13 +10,13 @@ group :development do
 end
 
 group :acceptance do
-  gem 'vagrant-digitalocean', '~> 0.5.3'
-  gem 'vagrant-aws', '~> 0.4.0'
-  gem 'vagrant-rackspace', '~> 0.1.4'
+#  gem 'vagrant-digitalocean', '~> 0.5.3'
+#  gem 'vagrant-aws', '~> 0.4.0'
+#  gem 'vagrant-rackspace', '~> 0.1.4'
 end
 
 group :docs do
-  gem 'yard', '~> 0.8.5'
-  gem 'redcarpet', '~> 2.2.2'
-  gem 'github-markup', '~> 0.7.5'
+#  gem 'yard', '~> 0.8.5'
+#  gem 'redcarpet', '~> 2.2.2'
+#  gem 'github-markup', '~> 0.7.5'
 end
