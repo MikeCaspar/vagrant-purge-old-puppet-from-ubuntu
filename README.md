@@ -30,10 +30,12 @@ Version 1.0.0 of the script simply assumes a complete remove and re-install is r
  end
 
  ```
-
 _If you would like to simply and always get the latest, change the url to
 https://raw.githubusercontent.com/MikeCaspar/vagrant-purge-old-puppet-from-ubuntu/master/scripts/latest/purge-install.sh
  _
+
+Note: the \ character in the sample above was added as a limitation in the code section in the git README. In your vagrantfile,
+remove the \ after install_url.
 
 ---
 For more information on the vagrant-puppet-install module click [HERE](https://github.com/petems/vagrant-puppet-install)
