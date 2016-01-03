@@ -12,6 +12,10 @@ Version 1.0.0 of the script simply assumes a complete remove and re-install is r
 
 This script can work in combination with the Vagrant Plugin [vagrant-puppet-install](https://github.com/petems/vagrant-puppet-install)
 
+To keep things as simple as possible and with minimal effort required (no builds required), start new versions rather than modifying existing versions.
+
+We're trying this as a simple experiment to simplify script downloading and backward compatibility.
+
 Enhancements to this script are welcome with Pull Requests.
 
 --
