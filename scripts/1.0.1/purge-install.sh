@@ -24,6 +24,12 @@
 #SOFTWARE.
 
 
+# best practices seems to suggest these should be set to error properly
+set -o errexit
+set -o pipefail
+set -o nounset
+
+
 apt-get purge puppet -y
 rm /etc/puppet -rf
 apt-get autoremove -y
