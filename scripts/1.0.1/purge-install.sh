@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+
 ## in case an older version of puppet is installed, remove it
 
 #The MIT License (MIT)
@@ -25,15 +26,15 @@
 
 function versionCheck {
 
-version=$("puppet" --version >&1 | awk -F '"' '{print $1}')
+    version=$("puppet" --version >&1 | awk -F '"' '{print $1}')
 
-echo Current Version is "$version"
+    echo Current Version is "$version"
 
     if [[ "$version" < "4" ]]; then
 
-apt-get purge puppet -y
-rm /etc/puppet -rf
-apt-get autoremove -y
+        apt-get purge puppet -y
+        rm /etc/puppet -rf
+        apt-get autoremove -y
 
 
     else
@@ -42,17 +43,18 @@ apt-get autoremove -y
 
     fi
 
-## install now
+    ## install now
 
-apt-get install wget
-wget https://apt.puppetlabs.com/puppetlabs-release-pc1-wheezy.deb
-dpkg -i puppetlabs-release-pc1-wheezy.deb
-apt-get update
+    apt-get install wget
+    wget https://apt.puppetlabs.com/puppetlabs-release-pc1-wheezy.deb
+    dpkg -i puppetlabs-release-pc1-wheezy.deb
+    apt-get update
 
-# install new puppet agent now...
-apt-get install puppet-agent
+    # install new puppet agent now...
+    apt-get install puppet-agent
 
 
 }
 
+versionCheck
 
