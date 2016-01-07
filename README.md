@@ -12,6 +12,7 @@ This script can work in combination with the Vagrant Plugin [vagrant-puppet-inst
 
 Version 1.0.0 of the script simply assumes a complete remove and re-install is requested.
 
+
 --
 
  **To use this script in your Vagrantfile** , the following code will work...
