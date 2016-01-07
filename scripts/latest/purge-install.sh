@@ -33,4 +33,4 @@ dpkg -i puppetlabs-release-pc1-wheezy.deb
 apt-get update
 
 # install new puppet agent now...
-apt-get install puppet-agent
+apt-get install puppet-agent -y
