@@ -34,20 +34,20 @@ function versionCheck {
 
     echo Current Version is "$version"
 
-    if [[ "$version" < "4" ]]; then
+    if [[ "$version" < "4" ]]
+     then
 
-{
         apt-get purge puppet -y
         rm /etc/puppet -rf
         apt-get autoremove -y
-}
+
 
     else
 
-{
+
         echo "Old puppet does not exist so it does not need to be removed"
 
- }
+
     fi
 
     ## install now
@@ -62,7 +62,7 @@ function versionCheck {
 
 }
 
+
 versionCheck
 
-exit 0;
 
