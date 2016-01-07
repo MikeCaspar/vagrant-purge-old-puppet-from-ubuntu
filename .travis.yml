@@ -1,0 +1,11 @@
+language: ruby
+rvm:
+ - "2.2.4"
+ - rbx
+
+notifications:
+  email:
+    - mike@caspar.com
+
+
+
