@@ -1,4 +1,6 @@
-#purge=install.sh
+#!/usr/bin/env bash
+
+#purge-install.sh
 
 # Version 1.0.1
 
@@ -34,15 +36,18 @@ function versionCheck {
 
     if [[ "$version" < "4" ]]; then
 
+{
         apt-get purge puppet -y
         rm /etc/puppet -rf
         apt-get autoremove -y
-
+}
 
     else
 
+{
         echo "Old puppet does not exist so it does not need to be removed"
 
+ }
     fi
 
     ## install now
@@ -59,4 +64,5 @@ function versionCheck {
 
 versionCheck
 
+exit 0;
 
