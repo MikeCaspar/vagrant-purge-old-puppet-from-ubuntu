@@ -1,10 +1,6 @@
 #!/usr/bin/env bash
 
 
-## Note.. This is here for testing before moving to latest.
-## Expected release as latest : Feb 1, 2016
-
-
 ## in case an older version of puppet is installed, remove it
 
 #The MIT License (MIT)
