@@ -44,11 +44,11 @@ function versionCheck {
 
     else
 
-
         echo "Old puppet does not exist so it does not need to be removed"
 
-
     fi
+
+}
 
     ## install now
 
@@ -60,7 +60,7 @@ function versionCheck {
     # install new puppet agent now...
     apt-get install puppet-agent -y
 
-}
+
 
 
 versionCheck
