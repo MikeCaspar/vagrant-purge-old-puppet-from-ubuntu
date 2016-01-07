@@ -28,7 +28,7 @@ rm /etc/puppet -rf
 apt-get autoremove -y
 
 apt-get install wget
-wget https://apt.puppetlabs.com/puppetlabs-release-pc1-trusty.deb
+wget https://apt.puppetlabs.com/puppetlabs-release-pc1-wheezy.deb
 dpkg -i puppetlabs-release-pc1-wheezy.deb
 apt-get update
 

@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#purge=install.sh
 
 # Version 1.0.1
 
@@ -59,5 +59,4 @@ function versionCheck {
 
 versionCheck
 
-exit 0
 
