@@ -1,9 +1,6 @@
 #!/usr/bin/env bash
 
-
-## Note.. This is here for testing before moving to latest.
-## Expected release as latest : Feb 1, 2016
-
+# Version 1.0.1
 
 ## in case an older version of puppet is installed, remove it
 
@@ -56,7 +53,7 @@ function versionCheck {
     apt-get update
 
     # install new puppet agent now...
-    apt-get install puppet-agent
+    apt-get install puppet-agent -y
 
 
 }
