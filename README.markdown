@@ -31,6 +31,8 @@ Version 1.0.0 of the script simply assumes a complete remove and re-install is r
  end
 
  ```
+ The safer thing should always be to use latest (it will always be a few versions behind).
+  
 _If you would like to simply and always get the latest, change the url to
 https://raw.githubusercontent.com/MikeCaspar/vagrant-purge-old-puppet-from-ubuntu/master/scripts/latest/purge-install.sh
 Although you may find a later version from a merge, etc. only consider latest to the the last tested (released) version
