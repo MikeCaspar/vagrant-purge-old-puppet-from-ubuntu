@@ -55,8 +55,9 @@ function versionCheck {
     # install new puppet agent now...
     apt-get install puppet-agent -y
 
-
 }
 
 versionCheck
+
+exit 0
 
