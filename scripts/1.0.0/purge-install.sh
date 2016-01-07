@@ -22,13 +22,13 @@
 #OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 #SOFTWARE.
 
-
+## in case an older version of puppet is installed, remove it
 apt-get purge puppet -y
 rm /etc/puppet -rf
 apt-get autoremove -y
 
-apt-get install wget 
-wget https://apt.puppetlabs.com/puppetlabs-release-pc1-wheezy.deb
+apt-get install wget
+wget https://apt.puppetlabs.com/puppetlabs-release-pc1-trusty.deb
 dpkg -i puppetlabs-release-pc1-wheezy.deb
 apt-get update
 
