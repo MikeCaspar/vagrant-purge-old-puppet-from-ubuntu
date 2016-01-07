@@ -44,11 +44,11 @@ function versionCheck {
 
     else
 
-
         echo "Old puppet does not exist so it does not need to be removed"
 
-
     fi
+
+
 
     ## install now
 
